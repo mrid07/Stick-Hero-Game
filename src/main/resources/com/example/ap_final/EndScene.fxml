@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:id="gamepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ap_final.HelloController3">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="407.0">
+         <image>
+            <Image url="@../../../Images/Background1.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="120.0" layoutY="277.0" />
+      <Button layoutX="152.0" layoutY="277.0" mnemonicParsing="false" onAction="#play" onMouseClicked="#retry" prefHeight="51.0" prefWidth="103.0" style="-fx-background-color: #f2545f;" text="Play">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Button>
+      <ImageView fitHeight="211.0" fitWidth="118.0" layoutX="145.0" layoutY="489.0">
+         <image>
+            <Image url="@../../../Images/p1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="221.0" layoutY="451.0">
+         <image>
+            <Image url="@../../../Images/char.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="407.0">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="407.0">
+               <image>
+                  <Image url="@../../../Images/Background1.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="120.0" layoutY="277.0" />
+            <ImageView fitHeight="87.0" fitWidth="92.0" layoutX="159.0" layoutY="382.0">
+               <image>
+                  <Image url="@../../../../../../Images/stats.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="85.0" layoutX="31.0" layoutY="382.0">
+               <image>
+                  <Image url="@../../../../../../Images/Star.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="43.0" prefHeight="140.0" prefWidth="345.0" text="GAME OVER" textFill="#280606">
+               <font>
+                  <Font name="Book Antiqua" size="54.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="87.0" fitWidth="85.0" layoutX="291.0" layoutY="382.0">
+               <image>
+                  <Image url="@../../../../../../Images/restart.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn" layoutX="306.0" layoutY="454.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Retry" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
